@@ -1,0 +1,56 @@
+.Team {
+	padding: 50px 0;
+
+	.upTitle {
+		color: #fc0;
+		font-weight: 600;
+		font-size: 18px;
+		margin-bottom: 10px;
+		text-align: center;
+		display: block;
+	}
+
+	.title {
+		position: relative;
+		font-weight: 600;
+		font-size: 55px;
+		text-align: center;
+		margin-bottom: 100px;
+
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: -20px; // 👈 чтобы линия была под текстом, не вплотную
+			width: 15%;
+			height: 4px;
+			background-color: #fc0;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+
+	.list {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 30px;
+		flex-wrap: wrap;
+	}
+
+	.item {
+		width: 100%;
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	.innerTitle {
+		font-weight: 600;
+		font-size: 24px;
+		margin: 35px 0 15px 0;
+	}
+
+	.text {
+		font-weight: 400;
+		font-size: 20px;
+	}
+}
