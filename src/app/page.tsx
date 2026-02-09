@@ -1,3 +1,4 @@
+import Categories from '@/components/Categories/Categories'
 import Hero from '@/components/Hero/Hero'
 import '../styles/reset.scss'
 import '../styles/styles.scss'
@@ -8,7 +9,7 @@ export default function Home() {
 		<div className={styles.page}>
 			<main>
 				<Hero />
-				{/* <Categories /> */}
+				<Categories />
 				{/* <Outlets /> */}
 				{/* <Delivery /> */}
 				{/* <Team /> */}
