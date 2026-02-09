@@ -7,11 +7,10 @@ import Partners from '@/components/Partners/Partners'
 import Team from '@/components/Team/Team'
 import '../styles/reset.scss'
 import '../styles/styles.scss'
-import styles from './page.module.css'
 
 export default function Home() {
 	return (
-		<div className={styles.page}>
+		<div>
 			<main>
 				<Hero />
 				<Categories />

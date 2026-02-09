@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
 
+import Footer from '@/components/Footer/Footer'
 import Header from '@/components/Header/Header'
-import './globals.css'
 
 const poppins = Poppins({
 	subsets: ['latin'],
@@ -28,7 +28,7 @@ export default function RootLayout({
 			>
 				<Header />
 				{children}
-				{/* <Footer /> */}
+				<Footer />
 			</body>
 		</html>
 	)

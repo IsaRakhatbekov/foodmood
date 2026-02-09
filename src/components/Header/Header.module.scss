@@ -6,6 +6,9 @@
 	z-index: 99;
 	color: #fff;
 	padding: 35px 0;
+	transition:
+		backdrop-filter 0.3s,
+		background-color 0.3s;
 
 	.nav {
 		gap: 20px;
@@ -95,9 +98,15 @@
 	}
 }
 
+.scrolled {
+	background-color: rgba(0, 0, 0, 0.4);
+	backdrop-filter: blur(10px);
+}
+
 @media (max-width: 991px) {
 	.header {
 		padding: 20px 0;
+
 		.rightSide {
 			gap: 25px;
 		}
@@ -138,11 +147,22 @@
 			display: block;
 			transition: all 0.3s;
 			z-index: 95;
-
-			&.mobileMenuActive {
-				transform: translateX(0);
-			}
+			overflow-y: auto;
 		}
+		.link {
+			color: #000;
+		}
+
+		.mobileMenuActive {
+			transform: translateX(0);
+		}
+	}
+
+	.mobileList {
+		padding: 100px 30px;
+		display: flex;
+		flex-direction: column;
+		gap: 25px;
 	}
 }
 
@@ -155,6 +175,7 @@
 		.rightSide {
 			gap: 15px;
 		}
+
 		.btn {
 			padding: 7px;
 			font-size: 12px;
