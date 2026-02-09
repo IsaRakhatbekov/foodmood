@@ -1,4 +1,5 @@
 import Categories from '@/components/Categories/Categories'
+import Delivery from '@/components/Delivery/Delivery'
 import Hero from '@/components/Hero/Hero'
 import Outlets from '@/components/Outlets/Outlets'
 import '../styles/reset.scss'
@@ -12,7 +13,7 @@ export default function Home() {
 				<Hero />
 				<Categories />
 				<Outlets />
-				{/* <Delivery /> */}
+				<Delivery />
 				{/* <Team /> */}
 				{/* <Discount /> */}
 				{/* <Partners /> */}
