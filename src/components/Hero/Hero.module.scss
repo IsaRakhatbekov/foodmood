@@ -71,3 +71,64 @@
 		cursor: pointer;
 	}
 }
+
+@media (max-width: 991px) {
+	.Hero {
+		.wrapper {
+			margin-bottom: 40px;
+		}
+		.title {
+			font-size: 50px;
+		}
+
+		.circle {
+			width: 150px;
+			height: 140px;
+			border-radius: 200px;
+		}
+
+		.percent {
+			font-size: 30px;
+		}
+
+		.discount {
+			font-size: 20px;
+		}
+
+		.text {
+			font-size: 18px;
+			max-width: 160px;
+		}
+
+		.btn {
+			padding: 8px 15px;
+			font-size: 15px;
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	.Hero {
+		.upTitle {
+			font-size: 18px;
+			margin-bottom: 0;
+		}
+
+		.title {
+			font-size: 35px;
+		}
+
+		.circle {
+			width: 100px;
+			height: 100px;
+		}
+
+		.percent {
+			font-size: 20px;
+		}
+
+		.discount {
+			font-size: 14px;
+		}
+	}
+}

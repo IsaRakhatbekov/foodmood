@@ -145,3 +145,19 @@
 		}
 	}
 }
+
+@media (max-width: 500px) {
+	.header {
+		.logoWrapper {
+			font-size: 15px;
+		}
+
+		.rightSide {
+			gap: 15px;
+		}
+		.btn {
+			padding: 7px;
+			font-size: 12px;
+		}
+	}
+}
