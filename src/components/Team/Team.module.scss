@@ -20,7 +20,7 @@
 		&::after {
 			content: '';
 			position: absolute;
-			bottom: -20px; // 👈 чтобы линия была под текстом, не вплотную
+			bottom: -20px;
 			width: 15%;
 			height: 4px;
 			background-color: #fc0;
@@ -52,5 +52,51 @@
 	.text {
 		font-weight: 400;
 		font-size: 20px;
+	}
+
+	.imgWrapper {
+		width: 100%;
+		max-width: 280px;
+		height: 350px;
+		border-radius: 10px;
+		overflow: hidden;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}
+
+@media (max-width: 991px) {
+	.Team {
+		.title {
+			margin-bottom: 90px;
+			font-size: 40px;
+		}
+
+		.innerTitle {
+			margin: 10px 0 0px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.Team {
+		.imgWrapper {
+			max-width: 240px;
+			height: 310px;
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	.Team {
+		.item {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
 	}
 }
