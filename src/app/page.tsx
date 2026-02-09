@@ -1,5 +1,6 @@
 import Categories from '@/components/Categories/Categories'
 import Delivery from '@/components/Delivery/Delivery'
+import Discount from '@/components/Discount/Discount'
 import Hero from '@/components/Hero/Hero'
 import Outlets from '@/components/Outlets/Outlets'
 import Team from '@/components/Team/Team'
@@ -16,7 +17,7 @@ export default function Home() {
 				<Outlets />
 				<Delivery />
 				<Team />
-				{/* <Discount /> */}
+				<Discount />
 				{/* <Partners /> */}
 			</main>
 		</div>

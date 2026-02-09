@@ -59,3 +59,30 @@
 		}
 	}
 }
+
+@media (max-width: 768px) {
+	.Discount {
+		background-color: #fc0;
+		.imgWrapper {
+			display: none;
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	.Discount {
+		.title {
+			font-size: 45px;
+		}
+
+		.subTitle {
+			font-size: 22px;
+		}
+
+		.link {
+			width: 120px;
+			height: 45px;
+			border-radius: 10px;
+		}
+	}
+}
